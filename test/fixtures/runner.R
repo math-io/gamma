@@ -1,7 +1,7 @@
 options( digits = 16 );
 library( jsonlite );
 
-x = seq( -6.5, 25, 0.5 )
+x = seq( -170.55, 171.5, length.out=1000 )
 y = gamma( x )
 
 cat( y, sep = ",\n" )
