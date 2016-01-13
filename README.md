@@ -18,7 +18,7 @@ Generalized to all complex numbers `z`, except for non-positive integers, the [g
 	<br>
 </div>
 
-where `&#03B3; ~= 0.577216` is the  [Euler–Mascheroni constant][euler-mascheroni-constant].
+where `γ ~= 0.577216` is the  [Euler–Mascheroni constant][euler-mascheroni-constant].
 
 
 ## Installation
