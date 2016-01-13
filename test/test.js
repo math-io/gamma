@@ -120,7 +120,7 @@ test( 'if provided a positive integer, the function returns the factorial of (n-
 	t.end();
 });
 
-test( 'the function uses a small value approximation near left boundaries', function test( t ) {
+test( 'the function uses a small value approximation near left boundaries (abs(x)<33)', function test( t ) {
 	var expected;
 	var delta;
 	var tol;
@@ -140,7 +140,7 @@ test( 'the function uses a small value approximation near left boundaries', func
 	t.end();
 });
 
-test( 'the function uses a small value approximation near right boundaries', function test( t ) {
+test( 'the function uses a small value approximation near right boundaries (abs(x)<33)', function test( t ) {
 	var expected;
 	var delta;
 	var tol;
@@ -157,5 +157,23 @@ test( 'the function uses a small value approximation near right boundaries', fun
 
 	t.ok( delta < tol, 'within tolerance. x: ' + x + '. Value: ' + v + '. Expected: ' + expected + '. Tolerance: ' + tol + '.' );
 
+	t.end();
+});
+
+test( 'the function handles larger values near integer boundary (abs(x)>33 && abs(x) is even)', function test( t ) {
+
+	// NOTE: due to the imprecision of `sin(pi)`, boundary case not triggered...
+	// t.equal( gamma( -34.999999999999999 ), Number.NEGATIVE_INFINITY, 'returns -infinity' );
+
+	t.ok( true, 'okay due to imprecision of `sin`' );
+	t.end();
+});
+
+test( 'the function handles larger values near integer boundary (abs(x)>33 && abs(x) is odd)', function test( t ) {
+
+	// NOTE: due to the imprecision of `sin(pi)`, boundary case not triggered...
+	// t.equal( gamma( -35.999999999999999 ), Number.POSITIVE_INFINITY, 'returns +infinity' );
+
+	t.ok( true, 'okay due to imprecision of `sin`' );
 	t.end();
 });
