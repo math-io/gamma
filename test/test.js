@@ -119,3 +119,43 @@ test( 'if provided a positive integer, the function returns the factorial of (n-
 	t.equal( gamma( 6 ), 120, 'returns 120' );
 	t.end();
 });
+
+test( 'the function uses a small value approximation near left boundaries', function test( t ) {
+	var expected;
+	var delta;
+	var tol;
+	var x;
+	var v;
+
+	x = -20.99999999999999;
+	v = gamma( x );
+
+	expected = -1.8364310433257593e-6;
+
+	delta = abs( v - expected );
+	tol = 1e-14;
+
+	t.ok( delta < tol, 'within tolerance. x: ' + x + '. Value: ' + v + '. Expected: ' + expected + '. Tolerance: ' + tol + '.' );
+
+	t.end();
+});
+
+test( 'the function uses a small value approximation near right boundaries', function test( t ) {
+	var expected;
+	var delta;
+	var tol;
+	var x;
+	var v;
+
+	x = -20.00000000000001;
+	v = gamma( x );
+
+	expected = -3.856505190983844e-5;
+
+	delta = abs( v - expected );
+	tol = 1e-14;
+
+	t.ok( delta < tol, 'within tolerance. x: ' + x + '. Value: ' + v + '. Expected: ' + expected + '. Tolerance: ' + tol + '.' );
+
+	t.end();
+});
