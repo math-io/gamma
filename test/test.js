@@ -90,7 +90,7 @@ test( 'the function evaluates the gamma function', function test( t ) {
 	for ( i = 0; i < data.length; i++ ) {
 		v = gamma( data[ i ] );
 		delta = abs( v - expected[ i ] );
-		tol = 1e-14 * Math.max( 1, abs( v ), abs( expected[ i ] ) );
+		tol = 2.75e-12 * Math.max( 1, abs( v ), abs( expected[ i ] ) );
 		t.ok( delta <= tol, 'within tolerance. x: ' + data[ i ] + '. Value: ' + v + '. Expected: ' + expected[ i ] + '. Tolerance: ' + tol + '.' );
 	}
 	t.end();
