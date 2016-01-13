@@ -5,15 +5,15 @@
 var test = require( 'tape' );
 var incrspace = require( 'compute-incrspace' );
 var abs = require( 'math-abs' );
-var gamma = require( './../lib' );
+var gamma = require( 'gamma' );
 
 
 // FIXTURES //
 
-var data1 = require( './fixtures/data1.json' );
-var expected1 = require( './fixtures/expected1.json' );
-var data2 = require( './fixtures/data2.json' );
-var expected2 = require( './fixtures/expected2.json' );
+var data1 = require( './../fixtures/data1.json' );
+var expected1 = require( './../fixtures/expected1.json' );
+var data2 = require( './../fixtures/data2.json' );
+var expected2 = require( './../fixtures/expected2.json' );
 
 
 // TESTS //
