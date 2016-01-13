@@ -7,14 +7,14 @@ Gamma Function
 The [gamma function][gamma-function] extends the [factorial function][factorial-function] to [real][real] and [complex][complex] numbers. If `n` is a positive `integer`,
 
 <div class="equation" align="center" data-raw-text="\Gamma ( n ) = (n-1)!" data-equation="eq:gamma_function_positive_integers">
-	<img src="" alt="Gamma function for positive intgers.">
+	<img src="https://cdn.rawgit.com/math-io/gamma/b34a280280f619103d048d80a42495219a49be58/docs/img/eqn1.svg" alt="Gamma function for positive intgers.">
 	<br>
 </div>
 
 Generalized to all complex numbers `z`, except for non-positive integers, the [gamma function][gamma-function] can be expressed as an infinite product
 
 <div class="equation" align="center" data-raw-text="\Gamma ( z ) = \frac{e^{-\gamma z}}{z} \prod^{\infty}_{n=1} \left ( 1+\frac{z}{n}\right )^{-1} e^{z/n}" data-equation="eq:gamma_function_infinite_product">
-	<img src="" alt="Gamma function for all complex numbers.">
+	<img src="https://cdn.rawgit.com/math-io/gamma/b34a280280f619103d048d80a42495219a49be58/docs/img/eqn2.svg" alt="Gamma function for all complex numbers.">
 	<br>
 </div>
 
