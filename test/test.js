@@ -90,12 +90,8 @@ test( 'the function evaluates the gamma function', function test( t ) {
 	for ( i = 0; i < data.length; i++ ) {
 		v = gamma( data[ i ] );
 		delta = abs( v - expected[ i ] );
-		if ( v < 1e5 ) {
-			tol = 1e-14;
-		} else {
-			tol = 1e-9;
-		}
-		t.ok( delta < tol, 'within tolerance. x: ' + data[ i ] + '. Value: ' + v + '. Expected: ' + expected[ i ] + '.' );
+		tol = 1e-14 * Math.max( 1, abs( v ), abs( expected[ i ] ) );
+		t.ok( delta <= tol, 'within tolerance. x: ' + data[ i ] + '. Value: ' + v + '. Expected: ' + expected[ i ] + '. Tolerance: ' + tol + '.' );
 	}
 	t.end();
 });
