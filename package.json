@@ -39,6 +39,8 @@
     "math",
     "mathematics",
     "special function",
+    "special",
+    "function",
     "gamma",
     "factorial",
     "scalar",
@@ -49,15 +51,16 @@
   },
   "dependencies": {
     "compute-const-eulergamma": "^1.0.1",
+    "const-ninf-float64": "^1.0.0",
+    "const-pi": "^1.0.3",
+    "const-pinf-float64": "^1.0.0",
     "math-abs": "^1.0.2",
     "math-evalpoly": "^1.1.0",
     "math-evalrational": "^1.0.0",
     "math-exp": "^1.0.0",
     "math-floor": "^1.0.0",
     "math-power": "^1.0.0",
-    "math-sin": "^1.0.0",
-    "validate.io-nan": "^1.0.3",
-    "validate.io-negative-integer": "^1.0.0"
+    "math-sin": "^1.0.0"
   },
   "devDependencies": {
     "browserify": "13.x.x",

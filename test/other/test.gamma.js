@@ -5,6 +5,8 @@
 var test = require( 'tape' );
 var incrspace = require( 'compute-incrspace' );
 var abs = require( 'math-abs' );
+var PINF = require( 'const-pinf-float64' );
+var NINF = require( 'const-ninf-float64' );
 var gamma = require( 'gamma' );
 
 
@@ -36,7 +38,7 @@ test( 'if provided a negative integer, the function returns `NaN`', function tes
 });
 
 test( 'if provided negative infinity, the function returns `NaN`', function test( t ) {
-	var v = gamma( Number.NEGATIVE_INFINITY );
+	var v = gamma( NINF );
 	t.ok( v !== v, 'returns NaN when provided negative infinity' );
 	t.end();
 });
@@ -49,13 +51,13 @@ test( 'if provided `NaN`, the function returns `NaN`', function test( t ) {
 
 test( 'if provided `-0`, the function returns negative infinity', function test( t ) {
 	var v = gamma( -0 );
-	t.equal( v, Number.NEGATIVE_INFINITY, 'returns -infinity' );
+	t.equal( v, NINF, 'returns -infinity' );
 	t.end();
 });
 
 test( 'if provided `+0`, the function returns positive infinity', function test( t ) {
 	var v = gamma( 0 );
-	t.equal( v, Number.POSITIVE_INFINITY, 'returns +infinity' );
+	t.equal( v, PINF, 'returns +infinity' );
 	t.end();
 });
 
@@ -66,7 +68,7 @@ test( 'if `x > 171.6144...`, the function returns positive infinity', function t
 
 	for ( i = 0; i < values.length; i++ ) {
 		v = gamma( values[ i ] );
-		t.equal( v, Number.POSITIVE_INFINITY, 'returns +infinity when provided ' + values[ i ] );
+		t.equal( v, PINF, 'returns +infinity when provided ' + values[ i ] );
 	}
 	t.end();
 });
@@ -78,7 +80,7 @@ test( 'if `x < -170.56749...`, the function returns positive infinity', function
 
 	for ( i = 0; i < values.length; i++ ) {
 		v = gamma( values[ i ] );
-		t.equal( v, Number.POSITIVE_INFINITY, 'returns +infinity when provided ' + values[ i ] );
+		t.equal( v, PINF, 'returns +infinity when provided ' + values[ i ] );
 	}
 	t.end();
 });
