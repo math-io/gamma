@@ -10,6 +10,10 @@
     {
       "name": "Athan Reines",
       "email": "kgryte@gmail.com"
+    },
+    {
+      "name": "Philipp Burckhardt",
+      "email": "pburckhardt@outlook.com"
     }
   ],
   "scripts": {
@@ -45,8 +49,9 @@
   },
   "dependencies": {
     "compute-const-eulergamma": "^1.0.1",
-    "compute-polynomial": "^1.1.0",
     "math-abs": "^1.0.2",
+    "math-evalpoly": "^1.1.0",
+    "math-evalrational": "^1.0.0",
     "math-exp": "^1.0.0",
     "math-floor": "^1.0.0",
     "math-power": "^1.0.0",
