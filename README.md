@@ -161,4 +161,4 @@ Copyright &copy; 2016. The [Compute.io][compute-io] Authors.
 [factorial-function]: https://github.com/math-io/factorial
 [real]: https://en.wikipedia.org/wiki/Real_number
 [complex]: https://en.wikipedia.org/wiki/Complex_number
-[euler-mascheroni-constant]: https://github.com/compute-io/const-eulergamma
+[euler-mascheroni-constant]: https://github.com/const-io/eulergamma

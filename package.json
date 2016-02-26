@@ -50,7 +50,7 @@
     "url": "https://github.com/math-io/gamma/issues"
   },
   "dependencies": {
-    "compute-const-eulergamma": "^1.0.1",
+    "const-eulergamma": "^1.0.3",
     "const-ninf-float64": "^1.0.0",
     "const-pi": "^1.0.3",
     "const-pinf-float64": "^1.0.0",
